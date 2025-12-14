@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="fixed top-8 left-0 right-0 z-50">
-      <div className="mx-auto max-w-[95%] px-4">
-        <div className="flex items-center rounded-full border border-[#f6f4ee] bg-white/60 backdrop-blur-xl shadow-lg px-4 py-2">
+    <header className="fixed top-12 left-0 right-0 z-50">
+      <div className="mx-auto md:max-w-[90%] px-4">
+        <div className="flex items-center rounded-full border border-[#f6f4ee] bg-white/60 backdrop-blur-xl shadow-lg md:px-4 md:py-2">
           {/* Mobile Menu */}
           <button className="mr-2 flex h-10 w-10 items-center justify-center rounded-full hover:bg-black/5 lg:hidden p-2">
             <svg
@@ -36,14 +36,16 @@ export default function Header() {
                   width={32}
                   height={16}
                 />
-                <span className="font-sans text-sm font-bold">AGI INC</span>
+                <span className="font-sans text-sm font-bold whitespace-nowrap">
+                  AGI INC
+                </span>
               </div>
             </div>
           </div>
 
           {/* Desktop Nav */}
-          <nav className="ml-auto flex items-center gap-6">
-            <div className="lg:flex hidden">
+          <nav className="ml-auto flex items-center gap-4">
+            <div className="lg:flex hidden gap-4">
               <button className="rounded-full bg-[#f6f4ee] px-4 py-1.5 font-serif text-sm">
                 Leaderboard
               </button>
@@ -59,7 +61,7 @@ export default function Header() {
             </div>
             <button
               className="
-          ml-3
+          ml-2
           rounded-full
           bg-black
           px-4
@@ -70,6 +72,7 @@ export default function Header() {
           text-white
           lg:ml-auto
           md:flex
+          cursor-pointer
         "
             >
               Participate
