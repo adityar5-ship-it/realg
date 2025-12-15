@@ -15,7 +15,7 @@ hover:from-[#A9E9FF] hover:via-[#50B9FF] hover:to-[#EDC5FF]
             shadow-md
           "
           >
-            Real v2 is live
+            RealG v2 is live
           </span>
         </div>
 
@@ -28,7 +28,7 @@ hover:from-[#A9E9FF] hover:via-[#50B9FF] hover:to-[#EDC5FF]
           text-black
         "
         >
-          REAL
+          REALG
         </h1>
 
         {/* Description */}
@@ -48,7 +48,10 @@ hover:from-[#A9E9FF] hover:via-[#50B9FF] hover:to-[#EDC5FF]
           <span className="bg-[radial-gradient(circle_at_center,#EDC5FF_0%,#50B9FF_45%,#A9E9FF_70%)] bg-clip-text text-transparent">
             L
           </span>
-          eaderboard
+          eaderboard{" "}
+          <span className="bg-[radial-gradient(circle_at_center,#EDC5FF_0%,#50B9FF_45%,#A9E9FF_70%)] bg-clip-text text-transparent">
+            G
+          </span>
         </p>
       </div>
     </section>

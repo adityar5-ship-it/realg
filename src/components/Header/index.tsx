@@ -20,7 +20,9 @@ export default function Header() {
 
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <span className="font-display text-[28px] tracking-wide">REAL</span>
+            <span className="font-display text-[28px] tracking-wide">
+              REALG
+            </span>
 
             <div className="h-6 w-px bg-black/20" />
 
