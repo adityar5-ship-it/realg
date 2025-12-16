@@ -2,10 +2,11 @@
 import { useState } from "react";
 import { versionList, scoreCategoryList, aiModels } from "@/mock-data";
 import { ButtonBase } from "@mui/material";
+import RealChart from "../LeaderboardChart";
 
 export default function RealScore() {
   const [selectedVersion, setSelctedVersion] = useState(versionList[0].id);
-  const [activeCategory, setActiveCategory] = useState(scoreCategoryList[1].id);
+  const [activeCategory, setActiveCategory] = useState(scoreCategoryList[0].id);
   return (
     <div className="my-20 max-w-300 m-auto px-20 py-10 bg-[#F6F4EE] rounded-4xl">
       <div className="flex justify-between items-center">
@@ -55,6 +56,7 @@ export default function RealScore() {
           </div>
         </div>
       </div>
+      <RealChart activeCategory={activeCategory} />
     </div>
   );
 }

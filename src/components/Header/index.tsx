@@ -1,8 +1,9 @@
+import { ButtonBase } from "@mui/material";
 import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="fixed top-12 left-0 right-0 z-50">
+    <div className="fixed top-12 left-0 right-0 z-50">
       <div className="mx-auto md:max-w-[90%] px-4">
         <div className="flex items-center rounded-full border border-[#f6f4ee] bg-white/60 backdrop-blur-xl shadow-lg md:px-4 md:py-2">
           {/* Mobile Menu */}
@@ -46,20 +47,60 @@ export default function Header() {
           </div>
 
           {/* Desktop Nav */}
-          <nav className="ml-auto flex items-center gap-4">
+          <div className="ml-auto flex items-center gap-4">
             <div className="lg:flex hidden gap-4">
-              <button className="rounded-full bg-[#f6f4ee] px-4 py-1.5 font-serif text-sm">
-                Leaderboard
-              </button>
-              <button className="rounded-full px-4 py-1.5 font-serif text-sm hover:bg-black/5">
-                Metrics
-              </button>
-              <button className="rounded-full px-4 py-1.5 font-serif text-sm hover:bg-black/5">
-                About
-              </button>
-              <button className="rounded-full px-4 py-1.5 font-serif text-sm hover:bg-black/5">
-                Partner
-              </button>
+              <ButtonBase
+                sx={{
+                  borderRadius: "9999px",
+                  overflow: "hidden",
+                }}
+                component="button"
+              >
+                <span
+                  className={`block rounded-full px-4 py-1 text-[#232F3E] font-sans text-sm hover:bg-black/5 transition`}
+                >
+                  Leaderboard
+                </span>
+              </ButtonBase>
+              <ButtonBase
+                sx={{
+                  borderRadius: "9999px",
+                  overflow: "hidden",
+                }}
+                component="button"
+              >
+                <span
+                  className={`block rounded-full px-4 py-1 text-[#232F3E] font-sans text-sm hover:bg-black/5 transition`}
+                >
+                  Metrics
+                </span>
+              </ButtonBase>
+              <ButtonBase
+                sx={{
+                  borderRadius: "9999px",
+                  overflow: "hidden",
+                }}
+                component="button"
+              >
+                <span
+                  className={`block rounded-full px-4 py-1 text-[#232F3E] font-sans text-sm hover:bg-black/5 transition`}
+                >
+                  About
+                </span>
+              </ButtonBase>
+              <ButtonBase
+                sx={{
+                  borderRadius: "9999px",
+                  overflow: "hidden",
+                }}
+                component="button"
+              >
+                <span
+                  className={`block rounded-full px-4 py-1 text-[#232F3E] font-sans text-sm hover:bg-black/5 transition`}
+                >
+                  Partner
+                </span>
+              </ButtonBase>
             </div>
             <button
               className="
@@ -79,9 +120,9 @@ export default function Header() {
             >
               Participate
             </button>
-          </nav>
+          </div>
         </div>
       </div>
-    </header>
+    </div>
   );
 }
